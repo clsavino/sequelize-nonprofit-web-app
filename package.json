@@ -1,0 +1,40 @@
+{
+  "name": "sequelize-nonprofit-web-app",
+  "version": "1.0.0",
+  "description": "A webpage proposal for OCIM of Hillsborough",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clsavino/sequelize-nonprofit-web-app.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mysql",
+    "orm",
+    "mvc",
+    "controllers",
+    "views",
+    "handlebars",
+    "sequelize"
+  ],
+  "author": "Christi Savino, Suzanna Gaddy, Lalit Solanki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clsavino/sequelize-nonprofit-web-app/issues"
+  },
+  "homepage": "https://github.com/clsavino/sequelize-nonprofit-web-app#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.6",
+    "mysql": "^2.11.1",
+    "sequelize": "^3.24.6"
+  }
+}
