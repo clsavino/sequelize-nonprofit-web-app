@@ -35,6 +35,7 @@
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.6",
     "mysql": "^2.11.1",
+    "node-exec-promise": "^0.1.1",
     "sequelize": "^3.24.6"
   }
 }
