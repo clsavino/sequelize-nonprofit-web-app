@@ -1,0 +1,90 @@
+body {
+  box-sizing: border-box;
+}
+
+.pageHeader {
+  height: 105px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  /*
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  */
+}
+
+header>img {
+  width: 300px;
+  margin: 20px;
+}
+
+header>a {
+  float: right;
+  margin: 20px;
+  color: #ffaf0a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header>a:hover {
+  color: #ffaf0a;
+  text-decoration: underline;
+}
+
+header>a:visited {
+  color: #ffaf0a;
+  text-decoration: none;
+}
+
+a.fb-link {
+  margin: 30px;
+}
+
+#fb-icon {
+  width: 30px;
+}
+
+.navbar-brand {
+  background-color: #ffaf0a;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 20px;
+  width: 130px;
+  text-align: center;
+}
+
+#volunteer {
+  margin: 0 20px 0 0;
+}
+
+#donate {
+  margin: 0;
+}
+
+.image-div {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+
+.contentBox {
+  min-height: 300px;
+  min-width: 200px;
+  height: 100%;
+  overflow: auto;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.ocim-footer {
+  text-align: center;
+  min-height: 100px;
+  width: 100%;
+  margin: 0;
+  border: 1px solid lightgray;
+  background-color: #ffaf0a;
+  color: black;
+  font-size: 12px;
+  padding-top: 10px;
+}
