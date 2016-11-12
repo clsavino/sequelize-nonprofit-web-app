@@ -23,11 +23,23 @@ router.get('/donate', function (req, res) {
   });
 
 router.get('/giftIdeas', function (req, res) {
-    res.render("index");
+    res.render("giftIdeas");
   });
 
 router.get('/ministries', function (req, res) {
-    res.render("donate");
+    res.render("ministries");
+  });
+
+router.get('/volunteer', function (req, res) {
+    res.render("volunteer");
+  });
+
+router.get('/contactUs', function (req, res) {
+    res.render("contactUs");
+  });
+
+router.get('/events', function (req, res) {
+    res.render("events");
   });
 
 // Insert route inserts new burger in database - '/burgers/new'
