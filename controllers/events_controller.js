@@ -13,7 +13,6 @@ router.get('/', function (req, res) {
   res.redirect('/index');
 });
 
-
 router.get('/index', function (req, res) {
     res.render("index");
   });
@@ -38,19 +37,32 @@ router.get('/contactUs', function (req, res) {
     res.render("contactUs");
   });
 
-router.get('/events', function (req, res) {
-    res.render("events");
-  });
+router.get('/events', function(req,res) {
+  res.render("events");
+});
 
-// Insert route inserts new burger in database - '/burgers/new'
+// get all events from database and display on page
+/*
+router.get('/events', function (req, res) {
+    model.event.findAll({}).then(function(data) {
+    res.render("events", {events: data});
+  });
+});
+*/
+
+// Insert route inserts new event in database
 router.post('/events/insertOne', function (req, res) {
-  var newEvent = req.body.burger_name;
-  model.burger.create({
-    burger_name: newBurger,
-    devoured: false
+  var newEvent = req.body.Type;
+  var newContent = req.body.Content;
+  var newDate = req.body.EventDate;
+
+  model.event.create({
+    Type: newEvent,
+    Content: newContent,
+    EventDate: newDate
   })
   .then(function () {
-    res.redirect("/burgers");
+    res.redirect("/events");
   });
 });
 
