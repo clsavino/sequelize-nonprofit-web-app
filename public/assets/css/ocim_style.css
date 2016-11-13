@@ -6,15 +6,15 @@ body {
   height: 105px;
   margin-top: 0px;
   margin-bottom: 10px;
-  /*
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  */
 }
 
-header>img {
-  width: 300px;
+.bannerImg {
+  width: 400px;
   margin: 20px;
+}
+
+#homeImg {
+  margin:auto;
 }
 
 header>a {
@@ -43,12 +43,14 @@ a.fb-link {
   width: 30px;
 }
 
-.navbar-brand {
+.navbar {
+  border-style: none;
+}
+
+.btn-nav {
   background-color: #ffaf0a;
-  border: 1px solid lightgray;
-  border-radius: 5px;
   padding: 20px;
-  width: 130px;
+  width: 106px;
   text-align: center;
 }
 
@@ -61,8 +63,6 @@ a.fb-link {
 }
 
 .image-div {
-  border: 1px solid lightgray;
-  border-radius: 5px;
   min-height: 200px;
   margin-bottom: 20px;
 }
@@ -72,9 +72,8 @@ a.fb-link {
   min-width: 200px;
   height: 100%;
   overflow: auto;
-  border: 1px solid lightgray;
-  border-radius: 5px;
   margin-bottom: 30px;
+  border-style: none;
 }
 
 .ocim-footer {
@@ -82,9 +81,12 @@ a.fb-link {
   min-height: 100px;
   width: 100%;
   margin: 0;
-  border: 1px solid lightgray;
   background-color: #ffaf0a;
-  color: black;
+  color: white;
   font-size: 12px;
   padding-top: 10px;
 }
+ #footerImg {
+  float: left;
+  height: 100px;
+ }
