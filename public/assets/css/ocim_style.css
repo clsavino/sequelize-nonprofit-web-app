@@ -38,7 +38,11 @@ a.fb-link {
   border-style: none;
 }
 
-.forestgreen {
+.navbar-default .navbar-nav>li>a {
+  color: forestgreen;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
   color: forestgreen;
 }
 
@@ -93,6 +97,10 @@ a.fb-link {
   border-style: none;
 }
 
+.outline {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
 
 #UWTriangleImg {
   width: 202px;
