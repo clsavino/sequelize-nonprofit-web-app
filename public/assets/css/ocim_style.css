@@ -8,15 +8,6 @@ body {
   margin-bottom: 10px;
 }
 
-.bannerImg {
-  width: 400px;
-  margin: 20px;
-}
-
-#homeImg {
-  margin:auto;
-}
-
 header>a {
   float: right;
   margin: 20px;
@@ -47,11 +38,28 @@ a.fb-link {
   border-style: none;
 }
 
-.btn-nav {
+.forestgreen {
+  color: forestgreen;
+}
+
+.btn-nav:link {
   background-color: #ffaf0a;
   padding: 20px;
   width: 106px;
   text-align: center;
+  border-style: none;
+}
+
+.btn-nav:visited {
+  background-color: #ffaf0a;
+}
+
+.btn-nav:hover {
+  background-color: forestgreen;
+}
+
+.btn-nav:active {
+  background-color: #ffaf0a;
 }
 
 #volunteer {
@@ -67,6 +75,15 @@ a.fb-link {
   margin-bottom: 20px;
 }
 
+.bannerImg {
+  width: 33%;
+  margin-top: 20px
+}
+
+#homeImg {
+  margin:0 auto;
+}
+
 .contentBox {
   min-height: 300px;
   min-width: 200px;
@@ -76,17 +93,25 @@ a.fb-link {
   border-style: none;
 }
 
+
+#UWTriangleImg {
+  width: 202px;
+}
+
 .ocim-footer {
   text-align: center;
-  min-height: 100px;
+  min-height: 120px;
   width: 100%;
   margin: 0;
   background-color: #ffaf0a;
-  color: white;
-  font-size: 12px;
+  color: forestgreen;
+  font-size: 15px;
+  font-weight: 500;
   padding-top: 10px;
 }
+
  #footerImg {
   float: left;
-  height: 100px;
+  height: 90px;
+  margin: 10px 20px 10px 20px;
  }
