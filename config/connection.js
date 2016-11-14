@@ -1,5 +1,5 @@
 /*
-Make the connection to the database and export
+Make the connection to the databases and export
 */
 var mysql = require('mysql');
 var connection;

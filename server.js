@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var path = require('path');
 var exphbs = require('express-handlebars');
-var router = require('./controllers/events_controller.js');
+var router = require('./controllers/controller.js');
 
 //set up the express server
 var app = express();
