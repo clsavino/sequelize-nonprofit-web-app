@@ -14,29 +14,29 @@ router.get('/index', function (req, res) {
     res.render("index");
   });
 
-router.get('/donate', function (req, res) {
-    res.render("donate");
-  });
+router.get('/events', function(req,res) {
+  res.render("events");
+});
 
-router.get('/giftIdeas', function (req, res) {
-    res.render("giftIdeas");
-  });
-
-router.get('/ministries', function (req, res) {
-    res.render("ministries");
-  });
-
-router.get('/volunteer', function (req, res) {
-    res.render("volunteer");
+router.get('/aboutUs', function (req, res) {
+    res.render("aboutUs");
   });
 
 router.get('/contactUs', function (req, res) {
     res.render("contactUs");
   });
 
-router.get('/events', function(req,res) {
-  res.render("events");
-});
+router.get('/giftIdeas', function (req, res) {
+    res.render("giftIdeas");
+  });
+
+router.get('/volunteer', function (req, res) {
+    res.render("volunteer");
+  });
+
+router.get('/donate', function (req, res) {
+    res.render("donate");
+  });
 
 router.get('/schedule', function(req,res) {
   res.render("schedule");
