@@ -10,7 +10,7 @@ var router = require('./controllers/controller.js');
 
 var models = require('./models')
 // SOLUTION: Sync our models
-models.sequelize.sync({});
+//models.sequelize.sync({});
 
 //set up the express server
 var app = express();
