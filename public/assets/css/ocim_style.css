@@ -46,6 +46,10 @@ a.fb-link {
   color: forestgreen;
 }
 
+#news-link:link #news-link:visited #news-link:hover #news-link:focus{
+  color: purple;
+}
+
 .btn-nav:link {
   background-color: #ffaf0a;
   padding: 20px;
@@ -111,7 +115,7 @@ a.fb-link {
   min-height: 120px;
   width: 100%;
   margin: 0;
-  background-color: #ffaf0a;
+  /*background-color: #ffaf0a;*/
   color: forestgreen;
   font-size: 15px;
   font-weight: bold;
