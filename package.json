@@ -38,5 +38,8 @@
     "mysql": "^2.11.1",
     "node-exec-promise": "^0.1.1",
     "sequelize": "^3.24.6"
+  },
+  "devDependencies": {
+    "nightmare": "^2.8.1"
   }
 }
