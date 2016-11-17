@@ -38,8 +38,12 @@ router.get('/donate', function (req, res) {
     res.render("donate");
   });
 
-router.get('/schedule', function(req,res) {
-  res.render("schedule");
+router.get('/adminSchedule', function(req,res) {
+  res.render("adminSchedule");
+});
+
+router.get('/adminVolunteers', function(req,res) {
+  res.render("adminVolunteers");
 });
 
 // get all events from database and display on page

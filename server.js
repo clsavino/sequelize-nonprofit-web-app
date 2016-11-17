@@ -9,7 +9,8 @@ var exphbs = require('express-handlebars');
 var router = require('./controllers/controller.js');
 
 var models = require('./models')
-// SOLUTION: Sync our models
+
+// Sync our models - this is done in sync.js but could be done here
 //models.sequelize.sync({});
 
 //set up the express server
