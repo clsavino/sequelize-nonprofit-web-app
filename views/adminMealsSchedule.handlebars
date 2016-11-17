@@ -63,51 +63,58 @@
         </div>
     </div>
 
-<div class="info-row">
+<div class="row info-row">
     <div class="col-md-12 ">
-        <div class="col-md-1">
+        <div class="col-md-3">
         </div>
 
-        <div class="col-md-10 contentBox text-center">
+        <div class="col-md-6 text-center">
             <div class="">
-                <h3 class="heading">Meals on Wheels Schedule</h3>
-                <ul>
-                  {{#each mealsonwheels}}
 
-                        <ul class="mealsFamily">{{this.Family}}</ul>
-                          <li class="mealsDriver">{{this.Driver}}</li>
-                          <li class="mealsRoute">{{this.Route}}</li>
-                          <li class="mealsDay">{{this.Day}}</li>
+                <table border="1" width="100%">
+                    <caption class="bold-orange-font text-center table-caption">Meals on Wheels Schedule</caption>
+                    <tr>
+                    <th class="bold-orange-font text-center">Family</th>
+                    <th class="bold-orange-font text-center">Driver</th>
+                    <th class="bold-orange-font text-center">Route</th>
+                    <th class="bold-orange-font text-center">Day</th>
+                    </tr>
+                    {{#each mealsonwheels}}
+                        <tr>
+                        <td class="green-font">{{this.Family}}</td>
+                        <td class="green-font">{{this.Driver}}</td>
+                        <td class="green-font">{{this.Route}}</td>
+                        <td class="green-font">{{this.Day}}</td>
+                        </tr>
+                    {{/each}}
+                </table>
 
-                  {{/each}}
-                </ul>
             </div>
         </div>
 
-        <div class="col-md-1">
+        <div class="col-md-3">
         </div>
-
     </div>
 </div>
 
-<div class="row">
+<div class="row add-row">
     <div class="col-md-12 ">
         <div class="col-md-1">
         </div>
 
         <div class="col-md-10 text-center">
             <div class="input">
-                <h3  class="heading" id="add">Add a Meals on Wheels Family</h3>
+                <h3  class="heading bold-orange-font" id="add">Add a Meals on Wheels Family</h3>
                 <div class="form-group">
-                    <form method="POST" action="mealsonsheels/insertFamily" class="addOne text-center">
+                    <form method="POST" action="mealsonsheels/insertFamily" class="addOne text-center green-font">
 
-                        Family Name:<br><input type="text" name="Family" required></input><br>
+                        Family Name:<br><input class= "input-box" type="text" name="Family" required></input><br>
 
-                        Driver:<br><input type="text" name="Driver" required></input><br>
+                        Driver:<br><input class= "input-box" type="text" name="Driver" required></input><br>
 
-                        Route:<br><input type="text" name="Route" required></input><br>
+                        Route:<br><input class= "input-box" type="text" name="Route" required></input><br>
 
-                        Day:<br><input type="text" name="Day" required></input><br><br>
+                        Day:<br><input class= "input-box" type="text" name="Day" required></input><br><br>
 
                         <button id="btnCreate"  type="submit" >Add a new Family</button>
                     </form>
