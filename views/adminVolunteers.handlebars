@@ -63,27 +63,31 @@
         </div>
     </div>
 
-    <!-- No images for Meals on Wheels Schedule -->
-
 <div class="info-row">
     <div class="col-md-12 ">
-        <div class="col-md-1">
+
+        <div class="col-md-3">
         </div>
 
-        <div class="col-md-10 contentBox text-center">
-            <div class="">
-                <h3 class="heading">Volunteer Schedule</h3>
-                <ul>
-                  {{#each Volunteers}}
-                        <ul class="">{{this.Name}}</ul>
-                          <li class="">{{this.EventName}}</li>
-                          <li class="">{{this.Phone}}</li>
-                  {{/each}}
-                </ul>
-            </div>
+        <div class="col-md-6 text-center">
+            <table border="1" width="100%">
+                <caption class="bold-orange-font text-center table-caption">Volunteer Schedule</caption>
+                <tr>
+                <th class="bold-orange-font text-center">Volunteer Name</th>
+                <th class="bold-orange-font text-center">Event</th>
+                <th class="bold-orange-font text-center">Phone Number</th>
+                </tr>
+                {{#each Volunteers}}
+                    <tr>
+                    <td class="green-font">{{this.Name}}</td>
+                    <td class="green-font">{{this.EventName}}</td>
+                    <td class="green-font">{{this.Phone}}</td>
+                    </tr>
+                {{/each}}
+            </table>
         </div>
 
-        <div class="col-md-1">
+        <div class="col-md-3">
         </div>
 
     </div>
@@ -96,15 +100,15 @@
 
         <div class="col-md-10 text-center">
             <div class="input">
-                <h3  class="heading" id="add">Add a Volunteer</h3>
+                <h3  class="heading bold-orange-font" id="add">Add a Volunteer</h3>
                 <div class="form-group">
                     <form method="POST" action="mealsonsheels/insertFamily" class="addOne text-center">
 
-                        Name:<br><input type="text" name="Family" required></input><br>
+                        Name:<br><input class= "input-box"type="text" name="Family" required></input><br>
 
-                        Event Date:<br><input type="text" name="Driver" required></input><br>
+                        Event Date:<br><input class= "input-box"type="text" name="Driver" required></input><br>
 
-                        Phone:<br><input type="text" name="Route" required></input><br><br>
+                        Phone:<br><input class= "input-box"type="text" name="Route" required></input><br><br>
 
                         <button id="btnCreate"  type="submit" >Add a new Family</button>
                     </form>
