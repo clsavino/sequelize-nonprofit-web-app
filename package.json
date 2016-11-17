@@ -41,6 +41,8 @@
     "sequelize-cli": "^2.4.0"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
     "nightmare": "^2.8.1"
   }
 }
