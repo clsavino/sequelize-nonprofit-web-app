@@ -101,13 +101,31 @@ a.fb-link {
   border-style: none;
 }
 
-.outline {
-  border: 1px solid lightgray;
-  border-radius: 5px;
-}
-
 #UWTriangleImg {
   width: 202px;
+}
+
+.events-heading {
+  margin-bottom: 30px;
+  color: forestgreen;
+}
+
+.bold-orange-font {
+  color: #ffaf0a;
+  font-weight:bold;
+}
+
+.green-font {
+  color: forestgreen;
+}
+
+.table-caption {
+  font-size: 20px;
+}
+
+.input-box {
+  width: 300px;
+  border-color: #ffaf0a;
 }
 
 .ocim-footer {
@@ -115,7 +133,6 @@ a.fb-link {
   min-height: 100px;
   width: 100%;
   margin: 0;
-  /*background-color: #ffaf0a;*/
   color: forestgreen;
   font-size: 15px;
   font-weight: bold;
