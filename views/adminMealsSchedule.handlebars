@@ -62,42 +62,64 @@
 
         </div>
     </div>
-    <!-- No images for Meals on Wheels Schedule
-    <div class="row image-row">
-        <div class="col-md-12">
 
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-10 image-div">
-            </div>
-            <div class="col-md-1">
-            </div>
-
-        </div>
-    </div>
-    -->
-    <div class="row info-row">
-      <div class="col-md-12 ">
-
+<div class="info-row">
+    <div class="col-md-12 ">
         <div class="col-md-1">
         </div>
 
-        <div class="col-md-10 ">
-            <div class="col-md-12">
-                <div class="col-md-1">
-                </div>
-                <div class="col-md-10 contentBox outline">
-                </div>
-                <div class="col-md-1">
-                </div>
+        <div class="col-md-10 contentBox text-center">
+            <div class="">
+                <h3 class="heading">Meals on Wheels Schedule</h3>
+                <ul>
+                  {{#each mealsonwheels}}
+
+                        <ul class="mealsFamily">{{this.Family}}</ul>
+                          <li class="mealsDriver">{{this.Driver}}</li>
+                          <li class="mealsRoute">{{this.Route}}</li>
+                          <li class="mealsDay">{{this.Day}}</li>
+
+                  {{/each}}
+                </ul>
             </div>
         </div>
 
         <div class="col-md-1">
         </div>
 
-      </div>
     </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 ">
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10 text-center">
+            <div class="input">
+                <h3  class="heading" id="add">Add a Meals on Wheels Family</h3>
+                <div class="form-group">
+                    <form method="POST" action="mealsonsheels/insertFamily" class="addOne text-center">
+
+                        Family Name:<br><input type="text" name="Family" required></input><br>
+
+                        Driver:<br><input type="text" name="Driver" required></input><br>
+
+                        Route:<br><input type="text" name="Route" required></input><br>
+
+                        Day:<br><input type="text" name="Day" required></input><br><br>
+
+                        <button id="btnCreate"  type="submit" >Add a new Family</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-1">
+        </div>
+
+    </div>
+</div>
 
     <div class="row footer-row">
         <div class="col-md-12 ">

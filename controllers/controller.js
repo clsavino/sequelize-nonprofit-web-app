@@ -14,8 +14,11 @@ router.get('/index', function (req, res) {
     res.render("index");
   });
 
-router.get('/events', function(req,res) {
-  res.render("events");
+// get all events from database and display on page
+router.get('/events', function (req, res) {
+    models.events.findAll({}).then(function(data) {
+    res.render("events", {events: data});
+  });
 });
 
 router.get('/aboutUs', function (req, res) {
@@ -38,40 +41,19 @@ router.get('/donate', function (req, res) {
     res.render("donate");
   });
 
-router.get('/adminSchedule', function(req,res) {
-  res.render("adminSchedule");
-});
-
-router.get('/adminVolunteers', function(req,res) {
-  res.render("adminVolunteers");
-});
-
-// get all events from database and display on page
-/*
-router.get('/events', function (req, res) {
-    models.events.findAll({}).then(function(data) {
-    res.render("events", {events: data});
-  });
-});
-*/
-
 // get all families from database and display on page
-/*
-router.get('/mealsonwheels', function (req, res) {
+router.get('/adminMealsSchedule', function (req, res) {
     models.mealsonwheels.findAll({}).then(function(data) {
-    res.render("schedule", {mealsonwheels: data});
+    res.render("adminMealsSchedule", {mealsonwheels: data});
   });
 });
-*/
 
 // get all volunteers from database and display on page
-/*
-router.get('/volunteers', function (req, res) {
+router.get('/adminVolunteers', function (req, res) {
     models.volunteers.findAll({}).then(function(data) {
-    res.render("volunteer", {Volunteers: data});
+    res.render("adminVolunteers", {Volunteers: data});
   });
 });
-*/
 
 // insertEvent inserts new event in events table
 router.post('/events/insertEvent', function (req, res) {
@@ -90,8 +72,6 @@ router.post('/events/insertEvent', function (req, res) {
 });
 
 // insertFamily inserts new family in mealsonwheels table
-//????????????????????????????????????????????????????
-// should it be /mealsonwheels or /schedule ?????????????????????????????????????????????????????//
 router.post('/mealsonwheels/insertFamily', function (req, res) {
   var newFamily = req.body.Family;
   var newDriver = req.body.Driver;
@@ -105,7 +85,7 @@ router.post('/mealsonwheels/insertFamily', function (req, res) {
     Day: newDay,
   })
   .then(function () {
-    res.redirect("/schedule");
+    res.redirect("/adminMealsSchedule");
   });
 });
 
@@ -121,9 +101,8 @@ router.post('/Volunteers/insertVolunteer', function (req, res) {
     Phone: newPhone
   })
   .then(function () {
-    res.redirect("/volunteer");
+    res.redirect("/adminVolunteers");
   });
 });
 
 module.exports = router;
-
