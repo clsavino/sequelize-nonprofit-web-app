@@ -50,7 +50,7 @@ router.get('/adminMealsSchedule', function (req, res) {
 
 // get all volunteers from database and display on page
 router.get('/adminVolunteers', function (req, res) {
-    models.volunteers.findAll({}).then(function(data) {
+    models.Volunteers.findAll({}).then(function(data) {
     res.render("adminVolunteers", {Volunteers: data});
   });
 });
