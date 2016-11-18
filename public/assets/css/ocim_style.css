@@ -150,16 +150,35 @@ tr:nth-child(odd) {
   border: 2px solid #ffaf0a;
 }
 
+.margin {
+  margin-bottom: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .ocim-footer {
   text-align: center;
   min-height: 100px;
   width: 100%;
-  margin-bottom: 0;
   color: forestgreen;
   font-size: 15px;
   font-weight: bold;
   font-weight: 500;
   padding-top: 10px;
+}
+
+.media {
+  color: forestgreen;
+}
+
+img.media-object {
+  float: left;
+}
+
+.footer-row {
+  margin-bottom: 0;
 }
 
 #copyright {
