@@ -61,7 +61,7 @@ router.post('/events/insertEvent', function (req, res) {
   var newDetails = req.body.Details;
   var newDate = req.body.Date;
 
-  model.events.create({
+  models.events.create({
     EventName: newEvent,
     Details: newDetails,
     Date: newDate
@@ -78,7 +78,7 @@ router.post('/mealsonwheels/insertFamily', function (req, res) {
   var newRoute = req.body.Route;
   var newDay = req.body.Day;
 
-  model.mealsonwheels.create({
+  models.mealsonwheels.create({
     Family: newFamily,
     Driver: newDriver,
     Route: newRoute,
@@ -95,12 +95,13 @@ router.post('/Volunteers/insertVolunteer', function (req, res) {
   var newEventName = req.body.EventName;
   var newPhone = req.body.Phone;
 
-  model.Volunteers.create({
+  models.Volunteers.create({
     Name: newName,
     EventName: newEventName,
     Phone: newPhone
   })
   .then(function () {
+    console.log('made it to post');
     res.redirect("/adminVolunteers");
   });
 });
