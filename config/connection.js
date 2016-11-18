@@ -2,8 +2,8 @@
 Make the connection to the databases and exports
 */
 // Needed to see JawsDB database in MySQL workbench
-
 var mysql = require('mysql');
+
 var connection;
 
 if (process.env.JAWSDB_URL) {
