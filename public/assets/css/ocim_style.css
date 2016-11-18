@@ -78,12 +78,6 @@ a.fb-link {
   margin: 0;
 }
 
-#login {
-  background: white;
-  color: forestgreen;
-  font-size: 15px;
-}
-
 .image-div {
   min-height: 200px;
   margin-bottom: 20px;
@@ -172,3 +166,9 @@ tr:nth-child(odd) {
   margin-bottom: 0;
 }
 
+#login {
+  background: white;
+  color: #ffaf0a;
+  font-size: 15px;
+  font-weight: bold;
+}
