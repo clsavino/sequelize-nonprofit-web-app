@@ -81,6 +81,7 @@ a.fb-link {
 #login {
   background: white;
   color: forestgreen;
+  font-size: 15px;
 }
 
 .image-div {
@@ -89,15 +90,19 @@ a.fb-link {
 }
 
 .bannerImg {
-  width: 33%;
-  margin-top: 20px;
-  max-height: 270px;
-  max-width: 270px;
-  margin: 20px 10px 30px 10px;
+  max-width: 400px;
+  margin: 10px 0px 30px 0;
 }
 
-#homeImg {
+#aboutUsImg {
   margin:0 auto;
+}
+
+.imageRowImg {
+  width: 33%;
+  margin-top: 20px;
+  height: 250px;
+  margin: 20px 0 30px 0;
 }
 
 .contentBox {
@@ -155,7 +160,7 @@ tr:nth-child(odd) {
   text-align: center;
   min-height: 100px;
   width: 100%;
-  margin: 0;
+  margin-bottom: 0;
   color: forestgreen;
   font-size: 15px;
   font-weight: bold;
