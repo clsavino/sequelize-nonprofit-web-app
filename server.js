@@ -6,12 +6,13 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var path = require('path');
 var exphbs = require('express-handlebars');
+var models = require('./models');
 var router = require('./controllers/controller.js');
 
-var models = require('./models')
-
-// Sync our models - this is done in sync.js but could be done here
-//models.sequelize.sync({});
+// Sync the models - force:true needed for setting up tables first time in MySQL workbench
+// and to cause tables to be made in  JAWSDB
+// ater  deployment to heroku
+models.sequelize.sync({});
 
 //set up the express server
 var app = express();

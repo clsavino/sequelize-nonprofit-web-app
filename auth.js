@@ -18,4 +18,4 @@ var auth = function (req, res, next) {
     return unauthorized(res);
   };
 };
-module.exports = authorization;
+module.exports = auth;
