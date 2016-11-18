@@ -78,6 +78,11 @@ a.fb-link {
   margin: 0;
 }
 
+#login {
+  background: white;
+  color: forestgreen;
+}
+
 .image-div {
   min-height: 200px;
   margin-bottom: 20px;
@@ -126,9 +131,24 @@ a.fb-link {
   font-size: 20px;
 }
 
+tr:nth-child(even) {
+  color:forestgreen;
+}
+
+tr:nth-child(odd) {
+  color: #ffaf0a;
+  font-weight: 600;
+}
+
 .input-box {
   width: 300px;
   border-color: #ffaf0a;
+  border-style: solid;
+}
+
+.event-textarea {
+  border-color: #ffaf0a;
+  border: 2px solid #ffaf0a;
 }
 
 .ocim-footer {

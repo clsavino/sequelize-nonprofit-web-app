@@ -1,0 +1,132 @@
+    <div class="row top-row">
+        <div class="col-md-12">
+
+            <div class="col-md-1">
+            </div>
+
+            <div class="col-md-10">
+                <header class="pageHeader">
+                    <img src="/assets/img/banner.svg" class="bannerImg" alt="OCIM Image" title="OCIM Image">
+                </header>
+            </div>
+
+            <div class="col-md-1">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row nav-row">
+        <div class="col-md-12">
+
+            <div class="col-md-1">
+            </div>
+
+
+            <div class="col-md-10">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                            <ul class="nav navbar-nav">
+                                <li><a class="forestgreen" href="/events">Meals Schedule</a></li>
+                                <li><a class="forestgreen" href="/aboutUs">Volunteers Schedule</a></li>
+                                <li><a class="forestgreen" href="#">Home</a></li>
+                            </ul>
+                        </div>
+                </nav>
+            </div>
+
+            <div class="col-md-1">
+            </div>
+
+        </div>
+    </div>
+
+<div class="row info-row">
+    <div class="col-md-12 ">
+
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10 text-center">
+            <table border="1" width="100%">
+                <caption class="bold-orange-font text-center table-caption">Events</caption>
+                <tr>
+                <th class="bold-orange-font text-center">Event</th>
+                <th class="bold-orange-font text-center">Details</th>
+                <th class="bold-orange-font text-center">Date</th>
+                </tr>
+                {{#each events}}
+                    <tr>
+                    <td >{{this.EventName}}</td>
+                    <td >{{this.Details}}</td>
+                    <td >{{this.Date}}</td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+
+        <div class="col-md-1">
+        </div>
+
+    </div>
+</div>
+
+<div class="row add-row">
+    <div class="col-md-12 ">
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10 text-center">
+            <div class="input">
+                <h3  class="heading bold-orange-font" id="add">Add an event</h3>
+                <div class="form-group">
+                    <form method="POST" action="/events/insertEvent" class="addOne text-center green-font">
+
+                        Event:<br><input class= "input-box" type="text" name="Event" required></input><br>
+
+                        Date:<br><input class= "input-box" type="text" name="Date" required></input><br><br>
+
+                        Details:<br><textarea rows="5" cols="40" class="event-textarea" type="text" name="Details" required></textarea><br>
+
+                        <button id="btnCreate"  type="submit" >Add a new Event</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-1">
+        </div>
+
+    </div>
+</div>
+
+    <div class="row footer-row">
+        <div class="col-md-12 ">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-10">
+                <div class="orange-footer">
+                  <footer class="ocim-footer">
+                              <p>Come Join Hands With Us!<br>
+                              He who has two coats, let him share with him who has none and he who has food, let him do likewise.  Luke 3:11 RSV<br>
+                              Orange Congregations in Mission   300 Millstone Drive   Hillsborough, NC 27278   (919) 732-6194<br>
+                             <p> @Copyright  S. Gaddy, C. Savino, L. Solanki</p>
+                  </footer>
+                </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
