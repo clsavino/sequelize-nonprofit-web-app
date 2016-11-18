@@ -42,14 +42,14 @@ router.get('/donate', function (req, res) {
   });
 
 // get all families from database and display on page
-router.get('/adminMealsSchedule', function (req, res) {
+router.get('/adminMealsSchedule', auth, function (req, res) {
     models.mealsonwheels.findAll({}).then(function(data) {
     res.render("adminMealsSchedule", {mealsonwheels: data});
   });
 });
 
 // get all volunteers from database and display on page
-router.get('/adminVolunteers', function (req, res) {
+router.get('/adminVolunteers', auth, function (req, res) {
     models.Volunteers.findAll({}).then(function(data) {
     res.render("adminVolunteers", {Volunteers: data});
   });
