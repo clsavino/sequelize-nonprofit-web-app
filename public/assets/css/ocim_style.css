@@ -83,6 +83,13 @@ a.fb-link {
   margin-bottom: 20px;
 }
 
+.giftImg {
+  width: 33%;
+  margin-top: 20px;
+  height: 250px;
+  text-align: center;
+}
+
 .bannerImg {
   max-width: 400px;
   margin: 10px 0px 30px 0;
@@ -93,10 +100,9 @@ a.fb-link {
 }
 
 .imageRowImg {
-  width: 33%;
+  width: 23%;
   margin-top: 20px;
   height: 250px;
-  margin: 20px 0 30px 0;
   text-align:center;
 }
 
