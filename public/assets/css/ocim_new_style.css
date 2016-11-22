@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  font-family: Roboto, Arial, Helvetica, sans-serif
+  font-family: "Roboto", Arial, Helvetica, sans-serif
 }
 
 .pageHeader {
@@ -12,18 +12,18 @@ body {
 header>a {
   float: right;
   margin: 20px;
-  color: #ffaf0a;
+  color: #ffc245;
   font-weight: bold;
   text-decoration: none;
 }
 
 header>a:hover {
-  color: #ffaf0a;
+  color: #ffc245;
   text-decoration: underline;
 }
 
 header>a:visited {
-  color: #ffaf0a;
+  color: #ffc245;
   text-decoration: none;
 }
 
@@ -33,7 +33,8 @@ header>a:visited {
 }
 
 a.fb-link {
-  margin: 30px;
+  margin: 50px 0 0 0;
+  color: #ffc245;
 }
 
 #fb-icon {
@@ -45,7 +46,7 @@ a.fb-link {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: forestgreen;
+  color: #4ea24e;
 }
 
 .navbar-nav>.active>a,
@@ -53,19 +54,19 @@ a.fb-link {
 .navbar-nav>.active>a:visited,
 .navbar-nav>.active>a:hover,
 .navbar-nav>.active>a:active {
-   color: forestgreen;
+   color: #4ea24e;
    background-color: white;
-   border-bottom: 2px solid forestgreen;
+   border-bottom: 2px solid #4ea24e;
    padding: 0 0 4px 0;
    margin: 19.5px;
 }
 
-li>a.forestgreen:hover {
+li>a.green:hover {
   background-color: white;
 }
 
 .btn-nav:link {
-  background-color: forestgreen;
+  background-color: #4ea24e;
   padding: 20px;
   width: 106px;
   text-align: center;
@@ -73,15 +74,15 @@ li>a.forestgreen:hover {
 }
 
 .btn-nav:visited {
-  background-color: forestgreen;
+  background-color: #4ea24e;
 }
 
 .btn-nav:hover {
-  background-color: #ffaf0a;
+  background-color: #4ea24e;
 }
 
 .btn-nav:active {
-  background-color: forestgreen;
+  background-color: #4ea24e;
 }
 
 #volunteer {
@@ -105,7 +106,7 @@ li>a.forestgreen:hover {
 }
 
 .gift-ideas:hover {
-  color: #ffaf0a;
+  color: #4ea24e;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -144,16 +145,19 @@ li>a.forestgreen:hover {
 
 .events-heading {
   margin-bottom: 30px;
-  color: forestgreen;
+  color: #4ea24e;
 }
 
 .bold-orange-font {
-  color: #ffaf0a;
+  /*color: #ffbc31;*/
+  color: #ffc245;
+  /*color: #ffaf0a; original*/
   font-weight:bold;
 }
 
 .green-font {
-  color: forestgreen;
+  color: #4ea24e;
+  /*color: forestgreen;*/
 }
 
 .gray-font {
@@ -161,7 +165,9 @@ li>a.forestgreen:hover {
 }
 
 .orange-font {
-  color: #ffaf0a;
+  /*color: #ffbc31;*/
+  color: #ffc245;
+  /*color: #ffaf0a; original*/
 }
 
 .margin {
@@ -177,7 +183,7 @@ li>a.forestgreen:hover {
 }
 
 .PayPalLink:hover {
-  color: forestgreen;
+  color: #4ea24e;
   text-decoration: underline
 }
 
@@ -209,12 +215,12 @@ tr:nth-child(odd) {
 
 .input-box {
   width: 300px;
-  border-color: forestgreen;
+  border-color: #4ea24e;
   border-style: solid;
 }
 
 .event-textarea {
-  border: 2px solid forestgreen;
+  border: 2px solid #4ea24e;
 }
 
 #eventBtnCreate {
@@ -229,16 +235,10 @@ tr:nth-child(odd) {
   text-align: center;
   min-height: 75px;
   width: 100%;
-  color: forestgreen;
+  color: #4ea24e;
   font-size: 15px;
-  font-weight: bold;
-  font-weight: 500;
   padding-top: 10px;
   margin-bottom: 0;
-}
-
-.media {
-  color: forestgreen;
 }
 
 #nartsImg {
@@ -276,10 +276,9 @@ tr:nth-child(odd) {
 .footer-right {
   display: inline;
   margin: 20px;
-  /*float: right;*/
 }
 
 #login {
-  color: forestgreen;
+  color: #4ea24e;
 }
 
