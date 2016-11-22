@@ -1,0 +1,285 @@
+body {
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif
+}
+
+.pageHeader {
+  height: 105px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+header>a {
+  float: right;
+  margin: 20px;
+  color: #ffaf0a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header>a:hover {
+  color: #ffaf0a;
+  text-decoration: underline;
+}
+
+header>a:visited {
+  color: #ffaf0a;
+  text-decoration: none;
+}
+
+.bannerImg {
+  max-width: 400px;
+  margin: 10px 0px 30px 0;
+}
+
+a.fb-link {
+  margin: 30px;
+}
+
+#fb-icon {
+  width: 30px;
+}
+
+.navbar {
+  border-style: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: forestgreen;
+}
+
+.navbar-nav>.active>a,
+.navbar-nav>.active>a:link,
+.navbar-nav>.active>a:visited,
+.navbar-nav>.active>a:hover,
+.navbar-nav>.active>a:active {
+   color: forestgreen;
+   background-color: white;
+   border-bottom: 2px solid forestgreen;
+   padding: 0 0 4px 0;
+   margin: 19.5px;
+}
+
+li>a.forestgreen:hover {
+  background-color: white;
+}
+
+.btn-nav:link {
+  background-color: forestgreen;
+  padding: 20px;
+  width: 106px;
+  text-align: center;
+  border-style: none;
+}
+
+.btn-nav:visited {
+  background-color: forestgreen;
+}
+
+.btn-nav:hover {
+  background-color: #ffaf0a;
+}
+
+.btn-nav:active {
+  background-color: forestgreen;
+}
+
+#volunteer {
+  margin: 0 20px 0 0;
+}
+
+#donate {
+  margin: 0;
+}
+
+.image-div {
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+
+.giftImg {
+  width: 33%;
+  margin-top: 20px;
+  height: 250px;
+  text-align: center;
+}
+
+.gift-ideas:hover {
+  color: #ffaf0a;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#aboutUsImg {
+  margin:0 auto;
+}
+
+.imageRowImg {
+  width: 23%;
+  margin-top: 20px;
+  height: 250px;
+  text-align:center;
+}
+
+.paypalImg {
+  margin-top: 20px;
+}
+
+.giftcard {
+  margin-top: 20px
+}
+
+.goodsearch {
+  margin-top: 20px;
+}
+
+.contentBox {
+  min-height: 300px;
+  min-width: 200px;
+  height: 100%;
+  overflow: auto;
+  margin-bottom: 30px;
+  border-style: none;
+}
+
+.events-heading {
+  margin-bottom: 30px;
+  color: forestgreen;
+}
+
+.bold-orange-font {
+  color: #ffaf0a;
+  font-weight:bold;
+}
+
+.green-font {
+  color: forestgreen;
+}
+
+.gray-font {
+  color: #4a4a4a;
+}
+
+.orange-font {
+  color: #ffaf0a;
+}
+
+.margin {
+  margin-bottom: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.PayPalLink:hover {
+  color: forestgreen;
+  text-decoration: underline
+}
+
+.add-Event {
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 30px;
+}
+
+.add-Meals {
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.table-caption {
+  font-size: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #cccccc;
+}
+
+tr:nth-child(odd) {
+  backgrouncolor:#ffffff;
+}
+
+.input-box {
+  width: 300px;
+  border-color: forestgreen;
+  border-style: solid;
+}
+
+.event-textarea {
+  border: 2px solid forestgreen;
+}
+
+#eventBtnCreate {
+  margin-bottom: 30px;
+}
+
+.last-row {
+  margin-bottom: 30px;
+}
+
+.footerP {
+  text-align: center;
+  min-height: 75px;
+  width: 100%;
+  color: forestgreen;
+  font-size: 15px;
+  font-weight: bold;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.media {
+  color: forestgreen;
+}
+
+#nartsImg {
+  float: left;
+  width: 175px;
+  margin:20px;
+}
+
+#UWTriangleImg {
+  float: left;
+  width: 202px;
+  margin: 20px;
+}
+
+#nccnpImg {
+  float: left;
+  width: 150px;
+  margin: 0px 20px 20px 20px;
+}
+
+#mowImg {
+  float: left;
+  width: 200px;
+  margin: 20px;
+}
+
+.footer-row {
+  margin-bottom: 0;
+}
+
+#copyright {
+  margin-bottom: 0;
+}
+
+.footer-right {
+  display: inline;
+  margin: 20px;
+  /*float: right;*/
+}
+
+#login {
+  color: forestgreen;
+}
+

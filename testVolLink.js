@@ -3,7 +3,7 @@ var nightmare = Nightmare({ show: true })
 
 nightmare
   .goto('https://nonprofit-web-app.herokuapp.com/index')
-  .click('#volunteer>a')
+  .click('a#volunteer')
   .wait('.bannerImg')
   .evaluate(function () {
     return document.querySelector('.volPage')
@@ -13,5 +13,6 @@ nightmare
     console.log(result)
   })
   .catch(function (error) {
-    console.error('page didn\'t render', error);
+    console.error('Search failed:', error);
+
   });

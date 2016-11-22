@@ -1,3 +1,4 @@
+<!--
     <div class="row top-row">
         <div class="col-md-12">
 
@@ -52,6 +53,7 @@
 
         </div>
     </div>
+-->
 
 <div class="row info-row">
     <div class="col-md-12 ">
@@ -62,12 +64,12 @@
             <div class="">
 
                 <table border="1" width="100%">
-                    <caption class="bold-orange-font text-center table-caption">Meals on Wheels Schedule</caption>
+                    <caption class="green-font text-center table-caption">Meals on Wheels Schedule</caption>
                     <tr>
-                    <th class="bold-orange-font text-center">Family</th>
-                    <th class="bold-orange-font text-center">Driver</th>
-                    <th class="bold-orange-font text-center">Route</th>
-                    <th class="bold-orange-font text-center">Day</th>
+                    <th class="gray-font text-center">Family</th>
+                    <th class="gray-font text-center">Driver</th>
+                    <th class="gray-font text-center">Route</th>
+                    <th class="gray-font text-center">Day</th>
                     </tr>
                     {{#each mealsonwheels}}
                         <tr>
@@ -94,9 +96,9 @@
 
         <div class="col-md-10 text-center">
             <div class="input">
-                <h3  class="heading bold-orange-font" id="add">Add a Meals on Wheels Family</h3>
+                <h4  class="heading green-font add-Meals">Add a Meals on Wheels Family</h4>
                 <div class="form-group">
-                    <form method="POST" action="/mealsonwheels/insertFamily" class="addOne text-center green-font">
+                    <form method="POST" action="/mealsonwheels/insertFamily" class="text-center gray-font">
 
                         Family Name:<br><input class= "input-box" type="text" name="Family" required></input><br>
 
@@ -117,7 +119,7 @@
 
     </div>
 </div>
-
+<!--
     <div class="row footer-row">
         <div class="col-md-12 ">
             <div class="col-md-1">
@@ -136,3 +138,4 @@
             </div>
         </div>
     </div>
+-->

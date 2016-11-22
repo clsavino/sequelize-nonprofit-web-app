@@ -1,3 +1,4 @@
+<!--
     <div class="row top-row">
         <div class="col-md-12">
 
@@ -53,20 +54,21 @@
 
         </div>
     </div>
+-->
 
 <div class="row info-row">
     <div class="col-md-12 ">
 
-        <div class="col-md-1">
+        <div class="col-md-2">
         </div>
 
-        <div class="col-md-10 text-center">
+        <div class="col-md-8 text-center">
             <table border="1" width="100%">
-                <caption class="bold-orange-font text-center table-caption">Events</caption>
+                <caption class="green-font text-center table-caption">Events</caption>
                 <tr>
-                <th class="bold-orange-font text-center">Event</th>
-                <th class="bold-orange-font text-center">Details</th>
-                <th class="bold-orange-font text-center">Date</th>
+                <th class="gray-font text-center">Event</th>
+                <th class="gray-font text-center">Details</th>
+                <th class="gray-font text-center">Date</th>
                 </tr>
                 {{#each events}}
                     <tr>
@@ -78,7 +80,7 @@
             </table>
         </div>
 
-        <div class="col-md-1">
+        <div class="col-md-2">
         </div>
 
     </div>
@@ -91,9 +93,9 @@
 
         <div class="col-md-10 text-center">
             <div class="input">
-                <h3  class="heading bold-orange-font" id="add">Add an event</h3>
+                <h4  class="green-font add-Event" >Add an event</h4>
                 <div class="form-group">
-                    <form method="POST" action="/events/insertEvent" class="addOne text-center green-font">
+                    <form method="POST" action="/events/insertEvent" class="addOne text-center gray-font">
 
                         Event:<br><input class="input-box" type="text" name="EventName" required></input><br>
 
@@ -101,7 +103,7 @@
 
                         Details:<br><textarea rows="5" cols="40" class="event-textarea" type="text" name="Details" required></textarea><br>
 
-                        <button id="btnCreate"  type="submit" >Add a new Event</button>
+                        <button id="eventBtnCreate"  type="submit" >Add a new Event</button>
                     </form>
                 </div>
             </div>
@@ -113,6 +115,7 @@
     </div>
 </div>
 
+<!--
     <div class="row footer-row">
         <div class="col-md-12 ">
             <div class="col-md-1">
@@ -131,3 +134,4 @@
             </div>
         </div>
     </div>
+-->

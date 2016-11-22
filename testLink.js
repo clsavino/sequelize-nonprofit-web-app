@@ -22,12 +22,11 @@ var Nightmare = require('nightmare');
 var nightmare = Nightmare({ show: true })
 
 nightmare
-  .goto('http://www.habitatwake.org/about-us')
-
-  .click('#menu-item-39>a')
-  .wait('.home')
+  .goto('https://nonprofit-web-app.herokuapp.com/index')
+  .click('#login>a')
+  .wait('')
   .evaluate(function () {
-    return document.querySelector('.html-box')
+    return document.querySelector('')
   })
   .end()
   .then(function (result) {

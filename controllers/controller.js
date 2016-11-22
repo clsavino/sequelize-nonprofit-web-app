@@ -5,6 +5,7 @@ var router = express.Router();
 var models = require('../models');
 //var connection = require('../config/connection.js');
 var auth = require('../auth.js');
+
 //root route redirect to /index
 router.get('/', function (req, res) {
   res.redirect('/index');
