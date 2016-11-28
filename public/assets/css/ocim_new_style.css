@@ -87,10 +87,22 @@ li>a.green:hover {
 
 #volunteer {
   margin: 0 20px 0 0;
+  background-color: #4ea24e;
+  color: white;
+  padding: 20px;
+  width: 106px;
+  text-align: center;
+  border-style: none;
 }
 
 #donate {
   margin: 0;
+  background-color: #4ea24e;
+  color: white;
+  padding: 20px;
+  width: 106px;
+  text-align: center;
+  border-style: none;
 }
 
 .image-div {
