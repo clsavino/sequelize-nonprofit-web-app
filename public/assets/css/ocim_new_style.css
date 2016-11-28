@@ -47,16 +47,16 @@ a.fb-link {
 .navbar {
   border-style: none;
 }
-
+/* styles the navbar links green*/
 .navbar-default .navbar-nav>li>a {
   color: #4ea24e;
 }
 
-.navbar-nav>.active>a,
-.navbar-nav>.active>a:link,
-.navbar-nav>.active>a:visited,
-.navbar-nav>.active>a:hover,
-.navbar-nav>.active>a:active {
+.navbar-nav>a,
+.navbar-nav>a:link,
+.navbar-nav>a:visited,
+.navbar-nav>a:hover,
+.navbar-nav>a:active {
    color: #4ea24e;
    background-color: white;
    border-bottom: 2px solid #4ea24e;
@@ -64,48 +64,17 @@ a.fb-link {
    margin: 19.5px;
 }
 
-li>a.green:hover {
-  background-color: white;
-}
-
-.btn-nav:link {
-  background-color: #4ea24e;
-  padding: 20px;
-  width: 106px;
-  text-align: center;
-  border-style: none;
-}
-
-.btn-nav:visited {
-  background-color: #4ea24e;
-}
-
-.btn-nav:hover {
-  background-color: #4ea24e;
-}
-
+.btn-nav:link,
+.btn-nav:visited,
+.btn-nav:hover,
 .btn-nav:active {
   background-color: #4ea24e;
-}
-
-#volunteer {
-  margin: 0 20px 0 0;
-  background-color: #4ea24e;
   color: white;
   padding: 20px;
   width: 106px;
   text-align: center;
   border-style: none;
-}
-
-#donate {
-  margin: 0;
-  background-color: #4ea24e;
-  color: white;
-  padding: 20px;
-  width: 106px;
-  text-align: center;
-  border-style: none;
+  margin: 0 0 0 20px;
 }
 
 .image-div {
