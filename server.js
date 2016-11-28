@@ -12,6 +12,13 @@ var router = require('./controllers/controller.js');
 //set up the express server
 var app = express();
 
+// setup handlebars templating engine
+// set the ".handlebars" engine as the view engine
+// set the view file extension as .handlebars
+// set the default layout as "main"
+app.engine('handlebars', exphbs({defaultLayout: 'main', extname: '.handlebars'}));
+app.set('view engine', 'handlebars');
+
 // Sync the models - force:true needed for setting up tables first time in MySQL workbench
 // and to cause tables to be made in  JAWSDB
 // ater  deployment to heroku
@@ -26,10 +33,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // override with POST having ?_method=DELETE
 app.use(methodOverride('_method'));
-
-//setup handlebars templating engine
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
 
 //
 app.use('/', router);
