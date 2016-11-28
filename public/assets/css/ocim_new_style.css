@@ -119,8 +119,11 @@ li>a.green:hover {
 
 .gift-ideas:hover {
   color: #4ea24e;
-  font-weight: bold;
   text-decoration: underline;
+}
+
+.gift-ideas {
+  color: #4ea24e;
 }
 
 #aboutUsImg {
@@ -188,10 +191,6 @@ li>a.green:hover {
 
 .bold {
   font-weight: bold;
-}
-
-.underline {
-  text-decoration: underline;
 }
 
 .PayPalLink:hover {
@@ -290,7 +289,7 @@ tr:nth-child(odd) {
   margin: 20px;
 }
 
-#login {
+#admin {
   color: #4ea24e;
 }
 
