@@ -208,29 +208,25 @@ tr:nth-child(odd) {
   padding-top: 10px;
   margin-bottom: 0;
 }
-
+.image-div {
+  min-height: 200px;
+  margin-bottom: 20px;
+}
 #nartsImg {
-  float: left;
   width: 175px;
-  margin:20px;
 }
 
 #UWTriangleImg {
-  float: left;
   width: 202px;
-  margin: 20px;
 }
 
 #nccnpImg {
-  float: left;
   width: 150px;
-  margin: 0px 20px 20px 20px;
+  margin-left: 20px;
 }
 
 #mowImg {
-  float: left;
   width: 200px;
-  margin: 20px;
 }
 
 .footer-row {
