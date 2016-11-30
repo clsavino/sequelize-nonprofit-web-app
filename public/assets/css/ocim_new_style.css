@@ -44,24 +44,29 @@ a.fb-link {
   width: 30px;
 }
 
+/* removes border placed by bootstrap around navbar */
 .navbar {
   border-style: none;
 }
-/* styles the navbar links green*/
-.navbar-default .navbar-nav>li>a {
-  color: #4ea24e;
-}
 
- .navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>li>a:link,
 .navbar-default .navbar-nav>li>a:visited,
-.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: #4ea24e; /*green*/
+  background-color: white;
+  padding: 0 0 4px 0;
+  margin: 19.5px;
+}
+
+/* this doesn't work, it is overwritten*/
 .navbar-default .navbar-nav>li>a:active {
-   color: #4ea24e;
-   background-color: white;
-   border-bottom: 2px solid #4ea24e;
-   padding: 0 0 4px 0;
-   margin: 19.5px;
+  border-bottom: 2px solid #4ea24e;
+}
+
+li>a.active {
+  border-bottom: 2px solid #4ea24e;
 }
 
 .btn-nav:link,
@@ -135,13 +140,6 @@ a.fb-link {
   color: #4ea24e;
 }
 
-.bold-orange-font {
-  /*color: #ffbc31;*/
-  color: #ffc245;
-  /*color: #ffaf0a; original*/
-  font-weight:bold;
-}
-
 .green-font {
   color: #4ea24e;
   /*color: forestgreen;*/
@@ -151,18 +149,8 @@ a.fb-link {
   color: #4a4a4a;
 }
 
-.orange-font {
-  /*color: #ffbc31;*/
-  color: #ffc245;
-  /*color: #ffaf0a; original*/
-}
-
-.margin {
+.info-rowTopMargin {
   margin-bottom: 30px;
-}
-
-.bold {
-  font-weight: bold;
 }
 
 .PayPalLink:hover {
@@ -170,19 +158,13 @@ a.fb-link {
   text-decoration: underline
 }
 
-.add-Event {
+.heading {
   font-size: 20px;
-  line-height: 28px;
-  margin-top: 30px;
-}
-
-.add-Meals {
-  font-size: 20px;
+  font-weight: normal;
   line-height: 28px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 
 .table-caption {
   font-size: 20px;
@@ -196,17 +178,21 @@ tr:nth-child(odd) {
   backgrouncolor:#ffffff;
 }
 
-.input-box {
-  width: 300px;
-  border-color: #4ea24e;
+/*doesn't overwrite bootstrap on focus*/
+.input-box, .input-box:focus {
+  width: 320px;
+  border-color: #4a4a4a;
   border-style: solid;
+  margin: 10px;
+  color: #4a4a4a ;
+  padding: 5px;
 }
 
 .event-textarea {
-  border: 2px solid #4ea24e;
+  border: 2px solid #4a4a4a;
 }
 
-#eventBtnCreate {
+.btnCreate {
   margin-bottom: 30px;
 }
 
@@ -258,10 +244,7 @@ tr:nth-child(odd) {
 
 .footer-right {
   display: inline;
-  margin: 20px;
-}
-
-#admin {
+  margin-left:50px ;
   color: #4ea24e;
 }
 

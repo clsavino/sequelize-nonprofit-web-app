@@ -1,42 +1,3 @@
-    <div class="row nav-row">
-        <div class="col-md-12">
-
-            <div class="col-md-1">
-            </div>
-
-
-            <div class="col-md-10">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                            <ul class="nav navbar-nav">
-                                <li><a class="green" href="/adminMealsSchedule">Meals Schedule</a></li>
-                                <li><a class="green" href="/adminVolunteers">Volunteer Schedule</a></li>
-                                <li><a class="green" href="/adminEvents">Events Schedule</a></li>
-                                <li><a class="green" href="/index">Home</a></li>
-                            </ul>
-                        </div>
-                </nav>
-            </div>
-
-            <div class="col-md-1">
-            </div>
-
-        </div>
-    </div>
--->
-
 <div class="row info-row">
     <div class="col-md-12 ">
 
@@ -74,9 +35,9 @@
 
         <div class="col-md-10 text-center">
             <div class="input">
-                <h4  class="green-font add-Event" >Add an event</h4>
+                <h4  class="heading green-font add-Event" >Add an event</h4>
                 <div class="form-group">
-                    <form method="POST" action="/events/insertEvent" class="addOne text-center gray-font">
+                    <form method="POST" action="/events/insertEvent" class="text-center gray-font">
 
                         Event:<br><input class="input-box" type="text" name="EventName" required></input><br>
 
@@ -84,7 +45,7 @@
 
                         Details:<br><textarea rows="5" cols="40" class="event-textarea" type="text" name="Details" required></textarea><br>
 
-                        <button id="eventBtnCreate"  type="submit" >Add a new Event</button>
+                        <button class="btnCreate"  type="submit" >Add a new Event</button>
                     </form>
                 </div>
             </div>

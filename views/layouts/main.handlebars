@@ -39,72 +39,116 @@
             </div>
         </div>
     </div>
-    {{#unless isAdminVolunteers}}
-        {{#unless isAdminEvents}}
-            {{#unless isAdminMealsSchedule}}
-                <div class="row nav-row">
-                    <div class="col-md-12">
-                        <div class="col-md-1">
-                        </div>
-                        <div class="col-md-7">
-                            <nav class="navbar navbar-default">
-                                <div class="container-fluid">
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                    </div>
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                        <ul class="nav navbar-nav">
-                                            <li><a  href="/index"
-                                            {{#if isIndex}}
-                                                class="active"
-                                            {{/if}}>Home</a></li>
-                                            <li><a  href="/events"
-                                            {{#if isEvents}}
-                                                class="active"
-                                            {{/if}}>Events</a></li>
-                                            <li><a  href="/aboutUs"
-                                            {{#if isAboutUs}}
-                                                class="active"
-                                            {{/if}}>About Us</a></li>
-                                            <li><a  href="/contactUs"
-                                            {{#if isContactUs}}
-                                                class="active"
-                                            {{/if}}>Contact Us</a></li>
-                                            <li><a  href="/giftIdeas"
-                                            {{#if isGiftIdeas}}
-                                                class="active"
-                                            {{/if}}>Gift Ideas
-                                            </a></li>
-                                            <li><a id="news-link"  href="http://pub.lucidpress.com/ocimfallnewsletter/" target="_blank"
-                                            {{#if isNewsletter}}
-                                                class="active"
-                                            {{/if}}>Newsletter</a></li>
-                                        </ul>
-                                    </div>
-                            </nav>
-                        </div>
-                        <div class="col-md-3 ">
-                            <a href="/volunteer" class="btn btn-nav"
-                            {{#if isVolunteer}}
 
-                            {{/if}}>Volunteer</a>
-                            <a href="/donate"  class="btn btn-nav"
-                            {{#if isDonate}}
-
-                            {{/if}}>Donate</a>
-                        </div>
-                        <div class="col-md-1">
-                        </div>
-                    </div>
+    {{#unless showAdminNav}}
+        <div class="row nav-row">
+            <div class="col-md-12">
+                <div class="col-md-1">
                 </div>
-            {{/unless}}
-        {{/unless}}
+                <div class="col-md-7">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a  href="/index"
+                                    {{#if isIndex}}
+                                        class="active"
+                                    {{/if}}>Home</a></li>
+                                    <li><a  href="/events"
+                                    {{#if isEvents}}
+                                        class="active"
+                                    {{/if}}>Events</a></li>
+                                    <li><a  href="/aboutUs"
+                                    {{#if isAboutUs}}
+                                        class="active"
+                                    {{/if}}>About Us</a></li>
+                                    <li><a  href="/contactUs"
+                                    {{#if isContactUs}}
+                                        class="active"
+                                    {{/if}}>Contact Us</a></li>
+                                    <li><a  href="/giftIdeas"
+                                    {{#if isGiftIdeas}}
+                                        class="active"
+                                    {{/if}}>Gift Ideas
+                                    </a></li>
+                                    <li><a id="news-link"  href="http://pub.lucidpress.com/ocimfallnewsletter/" target="_blank"
+                                    {{#if isNewsletter}}
+                                        class="active"
+                                    {{/if}}>Newsletter</a></li>
+                                </ul>
+                            </div>
+                    </nav>
+                </div>
+                <div class="col-md-3 ">
+                    <a href="/volunteer" class="btn btn-nav {{#if isVolunteer}}active{{/if}}"
+                    >Volunteer</a>
+                    <a href="/donate"  class="btn btn-nav {{#if isDonate}}active{{/if}}"
+                    >Donate</a>
+                </div>
+                <div class="col-md-1">
+                </div>
+            </div>
+        </div>
     {{/unless}}
+
+    {{#if showAdminNav}}
+        <div class="row nav-row">
+            <div class="col-md-12">
+
+            <div class="col-md-1">
+            </div>
+
+            <div class="col-md-10">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                            <ul class="nav navbar-nav">
+                                    <li><a href="/adminMealsSchedule"
+                                    {{#if isAdminMealsSchedule}}
+                                        class="active"
+                                    {{/if}}
+                                    >Meals Schedule</a></li>
+                                    <li><a href="/adminVolunteers"
+                                    {{#if isAdminVolunteers}}
+                                        class="active"
+                                    {{/if}}
+                                    >Volunteer Schedule</a></li>
+                                    <li><a href="/adminEvents"
+                                    {{#if isAdminEvents}}
+                                        class="active"
+                                    {{/if}}
+                                    >Events Schedule</a></li>
+                                    <li><a href="/index">Home</a></li
+                            </ul>
+                        </div>
+                </nav>
+            </div>
+
+            <div class="col-md-1">
+            </div>
+
+        </div>
+        </div>
+    {{/if}}
 
     {{{ body }}}
 
@@ -117,7 +161,7 @@
                     <p class="footerP">Come Join Hands With Us!<br>
                     He who has two coats, let him share with him who has none and he who has food, let him do likewise.  Luke 3:11 RSV<br>
                     Orange Congregations in Mission   300 Millstone Drive   Hillsborough, NC 27278   (919) 732-6194
-                    <a class ="footer-right" href="/adminVolunteers" id="admin">Admin</a>
+                    <a class ="footer-right" href="/adminVolunteers">Admin</a>
                     </p>
                 </footer>
             </div>
