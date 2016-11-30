@@ -94,11 +94,6 @@ li>a.active {
   text-align: center;
 }
 
-.gift-ideas:hover {
-  color: #4ea24e;
-  text-decoration: underline;
-}
-
 .gift-ideas {
   color: #4ea24e;
 }
@@ -153,9 +148,13 @@ li>a.active {
   margin-bottom: 30px;
 }
 
-.PayPalLink:hover {
+.link-hover:hover {
   color: #4ea24e;
   text-decoration: underline
+}
+
+.gift-ideas {
+  color: #4ea24e;
 }
 
 .heading {
