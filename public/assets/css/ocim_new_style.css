@@ -6,6 +6,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
+
+h5 {
+  font-size: 17px;
+}
+
 .pageHeader {
   height: 105px;
   margin-top: 0px;
@@ -144,9 +149,21 @@ li>a.active {
   color: #4a4a4a;
 }
 
-.info-rowTopMargin {
-  margin-bottom: 30px;
+.input-row {
+  margin-top: 40px;
 }
+
+.info-rowTopMargin {
+  margin-top: 40px;
+}
+
+.top-margin {
+  margin-top: 30px;
+}
+
+ .bottom-margin {
+  margin-bottom: 30px;
+ }
 
 .link-hover:hover {
   color: #4ea24e;
@@ -199,19 +216,11 @@ tr:nth-child(odd) {
   margin-bottom: 30px;
 }
 
-.footerP {
-  text-align: center;
-  min-height: 75px;
-  width: 100%;
-  color: #4ea24e;
-  font-size: 15px;
-  padding-top: 10px;
-  margin-bottom: 0;
-}
 .image-div {
   min-height: 200px;
   margin-bottom: 20px;
 }
+
 #nartsImg {
   width: 175px;
 }
@@ -246,4 +255,16 @@ tr:nth-child(odd) {
 .footer-right:hover {
   text-decoration: underline;
   color: #4ea24e;
+}
+
+.footerP {
+  text-align: center;
+  min-height: 75px;
+  width: 100%;
+  color: #4ea24e;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 10px;
+  margin-bottom: 0;
+  margin-top: 40px
 }
