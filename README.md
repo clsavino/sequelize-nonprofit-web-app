@@ -10,7 +10,7 @@ Deployed on Heroku - https://nonprofit-web-app.herokuapp.com/
 # Screenshots
 #### Proposed Home Page for the nonprofit
 
-![Alt text](public/assets/im/homeOcim.PNG?raw=true "Proposed Home Page using their photos")
+![Alt text](public/assets/img/homeOcim.PNG?raw=true "Proposed Home Page using their photos")
 
 #### Previous webpage for OCIMNC.org
 
@@ -18,7 +18,7 @@ Deployed on Heroku - https://nonprofit-web-app.herokuapp.com/
 
 #### Mobile Responsive Layout
 
-![Alt text](public/assets/im/mobileResp.PNG?raw=true "Photo showing mobile responsive design")
+![Alt text](public/assets/img/mobileResp.PNG?raw=true "Photo showing mobile responsive design")
 
 # Technologies Used
 #### The following technologies and tools were used in the development of this app.
