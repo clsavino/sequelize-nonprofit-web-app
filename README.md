@@ -49,6 +49,6 @@ Deployed on Heroku - https://nonprofit-web-app.herokuapp.com/
 #### [/clsavino/sequelize-nonprofit-web-app](https://github.com/clsavino/GoodNewsAPISearch)
 
 # Authors
-* **Christi Savino**
-* **Suzanna Gaddy
-* **Lalit Solanki
+* **Christi Savino - project manager, website architect, developer****
+* **Suzanna Gaddy - liaison to non-profit organization, content retrieval**
+* **Lalit Solanki - database setup, csvdata, migrations
