@@ -27,28 +27,26 @@ Deployed on Heroku - https://nonprofit-web-app.herokuapp.com/
 * **JavaScript**
 * **jQuery**
 * **Bootstrap**
-* **Node.js
-* **Express
-* **MySQL
-* **sequelize
-* **handlebars
-* **basic-auth
-* **cvsdata
-* **"node-exec-promise"
+* **Node.js**
+* **Express**
+* **MySQL**
+* **sequelize**
+* **handlebars**
+* **basic-auth**
+* **cvsdata**
+* **"node-exec-promise"**
 
 # Built With
 * **Sublime Text**
-* **Trello Board** [Trello Board](https://trello.com/b/HSVFzknl/nonprofit-web-app)
+* [Trello Board](https://trello.com/b/HSVFzknl/nonprofit-web-app)
 * **Balsamiq Mockup**
 
 # Getting Started
 #### The Heroku link to run is:
-#### [Heroku](https://nonprofit-web-app.herokuapp.com/index)
+#### [nonprofit-web-app.herokuapp.com](https://nonprofit-web-app.herokuapp.com/index)
 
 #### This open source non-profit website code is maintained in Github:
 #### [/clsavino/sequelize-nonprofit-web-app](https://github.com/clsavino/GoodNewsAPISearch)
-
-![Alt text](public/assets/img/.PNG?raw=true "Photo of code snipped of JavaScript using an Ajax call to the Flickr API")
 
 # Authors
 * **Christi Savino**
