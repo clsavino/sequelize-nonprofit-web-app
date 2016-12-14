@@ -51,4 +51,4 @@ Deployed on Heroku - https://nonprofit-web-app.herokuapp.com/
 # Authors
 * **Christi Savino - project manager, website architect, developer****
 * **Suzanna Gaddy - liaison to non-profit organization, content retrieval**
-* **Lalit Solanki - database setup, csvdata, migrations
+* **Lalit Solanki - database setup, csvdata, migrations**
