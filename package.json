@@ -15,7 +15,6 @@
     "node",
     "express",
     "mysql",
-    "orm",
     "mvc",
     "controllers",
     "views",
