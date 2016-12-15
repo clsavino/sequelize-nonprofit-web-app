@@ -53,14 +53,14 @@ Deployed on Heroku - https://nonprofit-web-app.herokuapp.com/
 * **MySQL**
 * **Node.js**
 * **NPM Packages**
-      *express
-*   **express-handlebars**
-*   **body-parser**
-*   **sequelize**
-*   **basic-auth**
-*   **mysql**
-*   **cvsdata**
-*   **node-exec-promise**
+*     **express**
+*     **express-handlebars**
+*     **body-parser**
+*     **sequelize**
+*     **basic-auth**
+*     **mysql**
+*     **cvsdata**
+*     **node-exec-promise**
 
 # Built With
 * **Sublime Text**
