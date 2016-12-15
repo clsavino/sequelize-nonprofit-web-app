@@ -8,11 +8,12 @@ Responsible for website architecture, Front end design, templating, and server r
 Deployed on Heroku - https://nonprofit-web-app.herokuapp.com/
 
 # Screenshots
-#### Proposed Home Page for the nonprofit
+### Proposed Home Page for the nonprofit
 
 ![Alt text](public/assets/img/homeOcim.PNG?raw=true "Proposed Home Page using their photos")
 
-#### Previous webpage for OCIMNC.org
+#
+### Previous webpage for OCIMNC.org
 
 ![Alt text](public/assets/img/prevOcim.PNG?raw=true "Original webpage for OCIMNC.org")
 
@@ -22,31 +23,45 @@ Deployed on Heroku - https://nonprofit-web-app.herokuapp.com/
 
 # Technologies Used
 #### The following technologies and tools were used in the development of this app.
-* **HTML5**
+* HTML5
 * **CSS3**
 * **JavaScript**
 * **jQuery**
 * **Bootstrap**
-* **Node.js**
-* **Express**
 * **MySQL**
-* **sequelize**
-* **handlebars**
-* **basic-auth**
-* **cvsdata**
-* **"node-exec-promise"**
+* **Node.js**
+* **NPM Packages**
+*   **express**
+*   **express-handlebars**
+*   **body-parser
+*   **sequelize**
+*   **basic-auth**
+*   **mysql**
+*   **cvsdata**
+*   **node-exec-promise**
+
+#MVC file structure
+
+![Alt text](public/assets/img/files1.PNG?raw=true "MVC file structure used")
+
+#10 pages rendered using Handlebars for templating and code minimization. Handlebars expressions and blocks used to determine Page title, active link, and navigation bar choice
+
+![Alt text](public/assets/img/files2.PNG?raw=true "Handlebars pages")
+
+![Alt text](public/assets/img/active.PNG?raw=true "active link class")
+![Alt text](public/assets/img/files5.PNG?raw=true "handlebars blocks for navbar choice")
+![Alt text](public/assets/img/router.PNG?raw=true "handlebars variables passed in router")
 
 # Built With
 * **Sublime Text**
-* [Trello Board](https://trello.com/b/HSVFzknl/nonprofit-web-app)
+* **[Trello Board](https://trello.com/b/HSVFzknl/nonprofit-web-app)
 * **Balsamiq Mockup**
 
 # Getting Started
 #### The Heroku link to run is:
 #### [nonprofit-web-app.herokuapp.com](https://nonprofit-web-app.herokuapp.com/index)
 
-#### This open source non-profit website code is maintained in Github:
-#### [/clsavino/sequelize-nonprofit-web-app](https://github.com/clsavino/GoodNewsAPISearch)
+#### This non-profit website project will remain open source
 
 # Authors
 * **Christi Savino - project manager, website architect, developer****
