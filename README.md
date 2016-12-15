@@ -19,15 +19,23 @@ Deployed on Heroku - https://nonprofit-web-app.herokuapp.com/
 #
 ### Mobile Responsive Layout
 
-![Alt text](public/assets/img/mobileResp.PNG?raw=true "Photo showing mobile responsive design")
+![Alt text](public/assets/img/mobileResp.PNG?raw=true "mobile responsive design image")
 
 #
-#MVC file structure
+### Administrator authorization using basic-auth npm package
+![Alt text](public/assets/img/authOcim.PNG?raw=true "administrator authorization image")
+
+#
+### Administrator page to enter volunteer information into database
+![Alt text](public/assets/img/adminOcim.PNG?raw=true "administrator page to enter volunteer info image")
+
+#
+### MVC file structure
 
 ![Alt text](public/assets/img/files1.PNG?raw=true "MVC file structure used")
 
 #
-###10 pages rendered using Handlebars for templating and code minimization. Handlebars expressions and blocks used to determine Page title, active link, and navigation bar choice
+### 10 pages rendered using Handlebars for templating and code minimization. Handlebars expressions and blocks used to determine Page title, active link, and navigation bar choice
 
 ![Alt text](public/assets/img/files2.PNG?raw=true "Handlebars pages")
 
@@ -35,7 +43,7 @@ Deployed on Heroku - https://nonprofit-web-app.herokuapp.com/
 ![Alt text](public/assets/img/files5.PNG?raw=true "handlebars blocks for navbar choice")
 ![Alt text](public/assets/img/router.PNG?raw=true "handlebars variables passed in router")
 
-## Technologies Used
+# Technologies Used
 #### The following technologies and tools were used in the development of this app.
 * **HTML5**
 * **CSS3**
@@ -54,18 +62,21 @@ Deployed on Heroku - https://nonprofit-web-app.herokuapp.com/
 *   **cvsdata**
 *   **node-exec-promise**
 
-## Built With
+# Built With
 * **Sublime Text**
-* **[Trello Board](https://trello.com/b/HSVFzknl/nonprofit-web-app)
+* **[Trello Board](https://trello.com/b/HSVFzknl/nonprofit-web-app)**
 * **Balsamiq Mockup**
 
-## Getting Started
+![Alt text](public/assets/img/trellOcim.PNG?raw=true "handlebars blocks for navbar choice")
+![Alt text](public/assets/img/balsamiqOcim.PNG?raw=true "handlebars variables passed in router")
+
+# Getting Started
 #### The Heroku link to run is:
 #### [nonprofit-web-app.herokuapp.com](https://nonprofit-web-app.herokuapp.com/index)
 
-## This non-profit website project will remain open source
+#### This non-profit website project will remain open source
 
-## Authors
+# Authors
 * **Christi Savino - Project manager and lead developer responsible for website architecture, front end design, templating, and server routes.**
 * **Suzanna Gaddy - liaison to non-profit organization, content retrieval**
 * **Lalit Solanki - database setup, csvdata, migrations**
